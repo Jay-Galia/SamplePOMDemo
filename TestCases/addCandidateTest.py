@@ -3,8 +3,8 @@ from selenium import webdriver
 import time
 import unittest
 import HtmlTestRunner
-from SamplePOMDemo.WebPages.loginPage import LoginPage
-from SamplePOMDemo.WebPages.addCandidate import AddCandidate
+from WebPages.loginPage import LoginPage
+from WebPages.addCandidate import AddCandidate
 
 class AddCandidateTest(unittest.TestCase):
 

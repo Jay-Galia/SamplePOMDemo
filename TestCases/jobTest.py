@@ -3,9 +3,9 @@ from selenium import webdriver
 import time
 import unittest
 import HtmlTestRunner
-from SamplePOMDemo.WebPages.jobPage import AddJob
-from SamplePOMDemo.WebPages.loginPage import LoginPage
-from SamplePOMDemo.WebPages.searchUser import SearchUser
+from WebPages.jobPage import AddJob
+from WebPages.loginPage import LoginPage
+from WebPages.searchUser import SearchUser
 
 class SearchTest(unittest.TestCase):
 

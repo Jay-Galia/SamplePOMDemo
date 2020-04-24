@@ -3,8 +3,8 @@ from selenium import webdriver
 import time
 import unittest
 import HtmlTestRunner
-from SamplePOMDemo.WebPages.searchUser import SearchUser
-from SamplePOMDemo.WebPages.loginPage import LoginPage
+from WebPages.searchUser import SearchUser
+from WebPages.loginPage import LoginPage
 
 
 class SearchTest(unittest.TestCase):
