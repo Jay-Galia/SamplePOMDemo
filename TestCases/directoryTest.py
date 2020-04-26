@@ -19,8 +19,11 @@ class DirectorySearchTest(unittest.TestCase):
         driver = self.driver
         self.driver.get('https://opensource-demo.orangehrmlive.com/')
         login = LoginPage(driver)
+        time.sleep(2)
         login.enter_username("Admin")
+        time.sleep(2)
         login.enter_password("admin123")
+        time.sleep(2)
         login.click_login()
         time.sleep(3)
 

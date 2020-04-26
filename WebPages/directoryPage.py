@@ -1,6 +1,5 @@
 from select import select
 
-
 class SearchDir:
 
     def __init__(self, driver):
