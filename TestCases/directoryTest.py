@@ -19,23 +19,24 @@ class DirectorySearchTest(unittest.TestCase):
         driver = self.driver
         self.driver.get('https://opensource-demo.orangehrmlive.com/')
         login = LoginPage(driver)
-        time.sleep(2)
+        time.sleep(1)
         login.enter_username("Admin")
-        time.sleep(2)
+        time.sleep(1)
         login.enter_password("admin123")
-        time.sleep(2)
+        time.sleep(1)
         login.click_login()
-        time.sleep(3)
+        time.sleep(2)
 
         directory = SearchDir(driver)
         directory.click_directory()
-        time.sleep(2)
+        time.sleep(1)
         directory.enter_name("Russel Hamilton")
-        time.sleep(2)
+        time.sleep(1)
         directory.click_title()
         time.sleep(2)
         directory.click_search()
-        time.sleep(3)
+        time.sleep(2)
+        assert "Russel Hamilton" in driver.page_source
 
     @classmethod
     def tearDownClass(cls):
